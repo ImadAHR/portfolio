@@ -36,9 +36,14 @@ ul{
     list-style-type: none;
 }
 .navbar ul li a{
-    margin: 5px;
+    margin: 10px;
     text-decoration: none;
     font-size:1rem ;
+    font-weight: 500;
+    transition: .7s;
+}
+.navbar ul li a:hover{
+    color: #415a77;
 }
 .content{
     width: 100%;
@@ -56,6 +61,10 @@ ul{
     text-align: center;
     
 }
+.logo a i{
+    color: black;
+    margin: 5px;
+}
 .about-me p{
     font-size: 1.2rem;
     color: #415a77;
@@ -67,12 +76,18 @@ ul{
     color: #1b263b;
 }
 .about-me button{
-    width: 100px;
-    height: 35px;
+    width: 150px;
+    height: 45px;
     background: #1b263b;
     color: #e0e1dd;
     margin: 15px;
     border-radius: 10px;
+    transition: .8s;
+    border: transparent;
+}
+.about-me button:hover{
+    background:cadetblue;
+    box-shadow: 1px 1px 20px black;
 }
 .logo span{
     margin: 5px;
@@ -81,7 +96,7 @@ ul{
 .description{
     width: 100%;
     height: 300px;
-    background: #000;
+    background: gainsboro;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,4 +113,84 @@ ul{
     display:inline-block; */
     text-align: left;
     margin: 20px;
+    color: #415a77;
+    text-decoration: underline solid red;
+}
+.descr p{
+    color: black;
+}
+.project{
+    width: 100%;
+    background:#415a77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.card-box{
+    width: 100%;
+    /* height: 100vh; */
+   background: #e0e1dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 90%;
+    /* height: 90%; */
+    /* background: #000; */
+    display: grid;
+    column-rule-color: aqua;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+.card{
+    width: 250px;
+    background: rgb(255, 255, 255);
+    height: 370px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px;
+}
+.card img{
+    margin: 10px;
+    border-radius: 20px;
+    border: 15px;
+}
+.card h1{
+    font-size: 2rem;
+    color: #000;
+}
+.card p{
+    color: #000;
+    font-size: .7rem;
+}
+.card button{
+    width: 100px;
+    height: 30px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: transparent;
+    border-radius: 10px;
+    font-weight: 700;
+    position: relative;
+    top: 1rem;
+    cursor: pointer;
+    line-height: .10;
+    transition: .8s;
+}
+.card button:hover{
+    background: #f1f1f1;
+    color: rgb(0, 0, 0);
+}
+.copyright{
+    color: rgb(255, 255, 255);
+    background: #000;
+    height: 40px;
+    padding: 20px;
+    font-size: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
